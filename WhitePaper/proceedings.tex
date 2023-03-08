@@ -267,13 +267,15 @@ From the second assumption, we see that $$h(X) = E[y|X] = \mu$$
 
 From the third assumption, we know that the canonical parameter $\eta$ is linearly related to X
 
-To identify the canonical parameter $\eta$, we write the probability density function of the Gaussian Distribution in exponential family form
+To identify the canonical parameter $\eta$, we write the probability density function of the Gaussian Distribution in exponential family form. 
+
+Starting from the generalized form of the exponential family we have:
 
 \begin{align*}
   p(y; \eta, \tau) &= b(\alpha, \tau) \exp\left(\frac{\eta^T T(y) - a(\eta)}{c(\tau)}\right) \\
-  p(y; \eta, \tau) &= b(\alpha, \tau) \exp\left(\frac{\eta^T T(y) - a(\eta)}{\sigma^2}\right) \\
-  p(y ; \eta) &= \frac{1}{\sqrt{2\pi}} \exp\left(-\frac{1}{2}\left(\frac{y - \mu}{\sigma}\right)^2\right) \\
-  &= \frac{1}{\sqrt{2\pi}} \exp\left(-\frac{1}{2}y^2\right) \exp\left( (x\eta - \frac{1}{2}\eta^2) T(y) \right)
+  &= b(\alpha, \tau) \exp\left(\frac{\eta^T T(y) - a(\eta)}{\sigma^2}\right) \\
+  %p(y ; \eta) &= \frac{1}{\sqrt{2\pi}} \exp\left(-\frac{1}{2}\left(\frac{y - \mu}{\sigma}\right)^2\right) \\
+  %&= \frac{1}{\sqrt{2\pi}} \exp\left(-\frac{1}{2}y^2\right) \exp\left( (x\eta - \frac{1}{2}\eta^2) T(y) \right)
 \end{align*}
 
 
