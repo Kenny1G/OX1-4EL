@@ -1,10 +1,14 @@
-# OX1-4EL
-Oxford Tutorial Machine Learning Project
+# What is included in this submission
+### Self Deriving Linear Regression from Exponential Family and GLM Assumptions
+- Trying to use the more generalized form of the exponential family, to arrive at the 
+- stuck/it's taking too much time for me to derive the formula necessary for me to get my hypothesis function 
 
-## Data
-Project expects a folder named `data` containing the yelp academic dataset
-a zip containing the files that should populate said folder can be downloaded from
-[here](https://office365stanford-my.sharepoint.com/:f:/g/personal/kenny1g_stanford_edu/EiHPqJLD3VpCqc8rTpT6tD8BPEeISmFa3r1r1XfQwRQfZg?e=4GbDJI) (Works as of 15-Feb-2023)
+### Creating my own Generalized Linear Model
+- With above figured out, will be able to fib with parameters to create a model more tailored to my dataset
 
-## Requirements
-Project expects numpy, pandas and sklearn to be installed
+### Feature Engineering
+- Extracting more features from reviews of businesses
+- First technique: collecting normalized unigram and bigram of good and bad words
+- Second technique: conducint structure and senitment analysis on each sentence of review
+
+
