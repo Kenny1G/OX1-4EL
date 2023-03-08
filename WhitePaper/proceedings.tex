@@ -240,7 +240,7 @@ Finally, to predict we use these stored counts to calculate the posterior distri
 %     IG &= L(Q_p) - (L(Q_1) + L(Q_2))
 % \end{align*}
 % To calculate mis-classification loss we use the Cross Entropy Loss function. Because it is a concave function, by using it as our loss function we are guaranteed to get new information with every split
-\subsection{Custom Generalized Linear Model}
+\subsection{Gaussian Generalized Linear Model}
 Our label $y$, thus far has been whether our user with most ratings, Karen, likes a restaurant or not. 
 For the sake of our custom GLM, we will instead predict the rating (1 - 5) the user would have given to the restaurant.
 
@@ -273,7 +273,7 @@ Starting from the generalized form of the exponential family we have:
 
 \begin{align*}
   p(y; \eta, \tau) &= b(\alpha, \tau) \exp\left(\frac{\eta^T T(y) - a(\eta)}{c(\tau)}\right) \\
-  &= b(\alpha, \tau) \exp\left(\frac{\eta^T T(y) - a(\eta)}{\sigma^2}\right) \\
+   &= b(\alpha, \tau) \exp\left(\frac{\eta^T T(y) - a(\eta)}{\sigma^2}\right) \\
   %p(y ; \eta) &= \frac{1}{\sqrt{2\pi}} \exp\left(-\frac{1}{2}\left(\frac{y - \mu}{\sigma}\right)^2\right) \\
   %&= \frac{1}{\sqrt{2\pi}} \exp\left(-\frac{1}{2}y^2\right) \exp\left( (x\eta - \frac{1}{2}\eta^2) T(y) \right)
 \end{align*}
